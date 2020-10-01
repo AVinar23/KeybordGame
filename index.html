@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<title>KeyBoard Game</title>
+	
+	
+</head>
+
+<body>
+	<section class="open-screen">		
+		<div class="content">
+			<h1> KeyBoard Game </h1>
+			<p class="open_content_description">
+				Тренировка быстрой скорости печати </br> на клавиатуре компьютера
+			</p>
+			<button class="button start">
+				Старт
+			</button>
+		</div>
+		<div class="content_img">
+			<img src="img/head-img.jpg">
+		</div>
+	</section>
+
+	<section class="main" id="startGame">
+		<div class="wrapper">
+			<div class="main_decription">
+				<div class="main_description_image">
+					<img src="img/women.png" alt="Picture" />
+				</div>
+				<div class="main_description_text">
+					<h2>Здравствуйте!</h2>
+					<p>На данной странице Вы можете потренировать свои навыки в скорости печати</p>
+					<p>Или устроить небольшие соревнования с Другом</p>
+					<p>"Кто быстрее доберется до нужной точки путем набора выбранного Вами текста?"</p>
+				</div>
+				<div class="main_description_text">
+					<p>Для того, чтобы начать, введите, пожалуйста, Ваше имя в поле ниже</p>
+					<p>Затем выберите 1 из вариантов текста</p>
+					<p>И <span>вперед!</span></p>
+					<p>В конце Вы увидите таблицу результатов</p>
+				</div>
+				<div class="main_description_image">
+					<img src="img/keyboard-1.png" alt="Picture Keyboard" />
+				</div>
+			</div>
+
+			<div class="input_name">
+				<label for="userName">Ваше имя: </label>
+				<input type="text" id="userName" placeholder="Введите Ваше имя" />
+			</div>
+
+			<div class="choise_text">
+				<label for="choise">Выбор текста:</label>
+				<select name ="list" id="choise" >
+					<option disabled selected> Выберите текст </option>
+					<option value="storie1"> 1 Вариант </option>
+					<option value="storie2"> 2 Вариант </option>
+				</select>
+			</div>
+
+			<button class="button reset"> Заново </button>
+
+			<div class="playField">
+				<div class="text"> </div> 
+				<div class="mistake">
+					<div class="mistakeField"> У Вас ошибка! </div>
+				</div>
+				<div class="input_field"> 
+					<input type="text" id="ourText" placeholder="Вводите текст" />
+				</div>
+				<div class="segment">
+					<div class="object">
+						<img src="img/car.png" alt="Car" />
+					</div>
+					<img  id="end_of_road" src="img/building.png" alt="Building" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="results">
+		<table class="showResults">
+			<thead>
+				<tr>
+					<th> Имя </th>
+					<th> Количество символов </th>
+					<th> Количество ошибок </th>
+					<th> Время (c) </th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</section>
+
+	<footer>
+		<div class="wrapper">
+			<div class="coopyright">
+				<p>Made by Anna Vinar</p>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
